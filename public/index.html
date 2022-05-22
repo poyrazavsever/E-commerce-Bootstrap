@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"> -->
+</head>
+<body>
+    <span  id="main-page"></span>
+    <div id="header" class="sticky-sm-top">
+
+        <div id="header-top" class="p-4 text-dark shadow-sm bg-white">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col">
+                        <h1 class="h4">Pavsever.<span class="text-primary">com</span></h1>             
+                    </div>
+
+                    <div class="col">
+                        <form class="d-flex" role="search">
+                            <input class="form-control me-2" type="search" placeholder="Ara..." aria-label="Search">
+
+                            <button class="btn btn-outline-dark fw-normal" type="button">Ara</button>
+                          </form>
+                    </div>
+
+                    <div class="col text-center">                   
+                        <a href="register.html" id="user-icon" class="me-5 text-dark text-decoration-none" style="cursor: pointer;">
+                             <i class="fa-solid fa-user p-2 border rounded"></i>
+                            Üye Ol
+                         </a>
+                        <a href="shop.html" id="shop-icon" class="me-5 text-dark text-decoration-none" style="cursor:pointer;"> 
+                             <i class="fa-solid fa-cart-shopping p-2 border rounded"></i>
+                            Sepetim
+                        </a>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+
+        <nav class="navbar bg-dark navbar-dark navbar-expand-sm">
+            <div class="container">
+                <a href="#" class="navbar-brand text-primary">Poyraz Avsever</a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+                    <ul class="navbar-nav me-auto">
+                        <li class="nav-item">
+                            <a href="#main-page" class="nav-link">Ana Sayfa</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#sss" class="nav-link">SSS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#fırsat" class="nav-link">Fırsatlar</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="product.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Ürünler
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-dark text-light" aria-labelledby="navbarDropdown">
+                                <p class="text-center"> Locks </p>
+                                <li><hr class="dropdown-divider text-center"></li>   
+                                <li><a class="dropdown-item" href="product.html##product"><i class="fa-regular fa-gem"></i> Big Gem Lock</a></li>
+                                <li><a class="dropdown-item" href="product.html##product"><i class="fa-solid fa-gem"></i> Diamond Lock</a></li>
+                                <li><a class="dropdown-item" href="product.html##product"><i class="fa-solid fa-lock"></i> World Lock</a></li>
+                                <li><hr class="dropdown-divider text-center"></li>
+                                <p class="text-center"> İtemler </p>
+                                <li><hr class="dropdown-divider text-center"></li>
+                                <li><a class="dropdown-item" href="product.html##product">➤ Hesaplar</a></li>
+                                <li><a class="dropdown-item" href="product.html##product">➤ Kanatlar</a></li>
+                                
+
+                            </ul>
+                        </li>
+                    </ul>
+        
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a href="support.html" class="nav-link"><i class="fa-solid fa-phone"></i> Destek</a> 
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
+    </div>
+    <br><br><br>
+
+    <div id="main">
+        
+        <div class="container">
+
+            <div class="alert alert-primary alert-dismissible fade show" role="alert">
+                <strong>Merhaba,</strong> Sitenin responsive tasarımı yapılmaktadır. Mobil görüntüde sorun olabilir.
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            </div>
+
+            <div class="row mx-auto w-75">
+
+                <div class="col">
+                    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        </div>
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img src="images/slider-1.jpg" class="d-block w-100" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Muhteşem İndirim!</h5>
+                                <p>18 Haziran'a kadar 1 DL sadece 10TL</p>
+                            </div>
+                          </div>
+                          <div class="carousel-item">
+                            <img src="images/slider-2.jpg" class="d-block w-100" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Dünya satışlarımız başladı...</h5>
+                                <p>Şuan Farm dünyalarımız 8TL, Normal dünyalar ise 35Tl'dir.</p>
+                            </div>
+                          </div>
+                          <div class="carousel-item">
+                            <img src="images/slider-3.jpg" class="d-block w-100" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>İtemlerde ŞOK indirim!</h5>
+                                <p>%20 İndirim şuan sitemizde sizleri bekliyor!</p>
+                            </div>
+                          </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                      </div>
+                </div>
+
+            </div>
+
+            <br id="sss"><br><br><br><br><br><br><br>
+
+            <div class="row">
+                
+                <h1 class="fs-1 fw-light mt-auto text-center py-5">SSS</h1>
+
+                <div class="accordion my-5 w-50 mx-auto" id="accordionSSS">
+                    <div class="accordion-item">
+
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                    Kaç gün içersinde teslim ediyoruz?
+                                </button>
+                            </h2>
+
+                            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-bs-parent = "#accordionSSS">
+                                <div class="accordion-body">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi cupiditate tenetur perspiciatis, harum obcaecati quis, ullam eligendi dicta repellendus hic aperiam dolore iusto unde ratione? Ipsam impedit repellendus fuga maiores!</p>
+                                </div>
+                            </div>
+
+                    </div>
+
+                    <div class="accordion-item">
+
+                            <h2 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    İtemleri nasıl elde ediyoruz?
+                                </button>
+                            </h2>
+
+                            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-bs-parent = "#accordionSSS">
+                                <div class="accordion-body">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique doloribus quae dolores iste itaque vero quasi ab sint esse voluptate, praesentium repudiandae? Adipisci, fugit laborum maiores nam placeat velit vitae a, animi quia quasi necessitatibus tempora aliquam at neque harum dicta magnam molestias vel quos dolorem ipsum? Nostrum, esse. Numquam laboriosam nisi qui sed accusantium est hic atque, vitae dolorem magnam accusamus unde nulla incidunt iusto impedit dolorum tempora culpa non quo quaerat adipisci tenetur saepe. Praesentium, esse excepturi perferendis sapiente recusandae alias harum ad est assumenda numquam culpa nihil. Dolore autem magni asperiores veritatis iste, facilis quo nemo error.</p>
+                                </div>
+                            </div>
+
+                    </div>
+
+                    <div class="accordion-item">
+
+                            <h2 class="accordion-header" id="headingThree">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    Nasıl çalışıyoruz?
+                                </button>
+                            </h2>
+
+                            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-bs-parent = "#accordionSSS">
+                                <div class="accordion-body">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi cupiditate tenetur perspiciatis, harum obcaecati quis, ullam eligendi dicta repellendus hic aperiam dolore iusto unde ratione? Ipsam impedit repellendus fuga maiores!</p>
+                                </div>
+                            </div>
+
+                    </div>
+
+                    <div class="accordion-item">
+
+                            <h2 class="accordion-header" id="headingFour">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                    Elimizdeki stok ne durumda?
+                                </button>
+                            </h2>
+
+                            <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-bs-parent = "#accordionSSS">
+                                <div class="accordion-body">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi cupiditate tenetur perspiciatis, harum obcaecati quis, ullam eligendi dicta repellendus hic aperiam dolore iusto unde ratione? Ipsam impedit repellendus fuga maiores!</p>
+                                </div>
+                            </div>
+
+                    </div>
+
+                    <div class="accordion-item">
+
+                            <h2 class="accordion-header" id="headingFive">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                    Elimizdeki stok bitecek mi?
+                                </button>
+                            </h2>
+
+                            <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-bs-parent = "#accordionSSS">
+                                <div class="accordion-body">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi cupiditate tenetur perspiciatis, harum obcaecati quis, ullam eligendi dicta repellendus hic aperiam dolore iusto unde ratione? Ipsam impedit repellendus fuga maiores!</p>
+                                </div>
+                            </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <br id = "fırsat"><br><br><br><br><br><br><br>
+            <h2 class="h1 text-center">Fırsat <span class="text-primary">Ürünler!</span></h2>
+            <div class="row pt-5 w-100 justify-content-center">
+                <div class="card w-25 m-3">
+                    <img src="images/25wl.jpg" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            5 WL
+                        </h5>
+                        <p class="card-text">
+                           20TL
+                        </p>
+                        <a href="#" class="btn btn-primary">Satın Al</a>
+                    </div>
+                </div>
+
+                <div class="card w-25 m-3">
+                    <img src="images/50wl.jpg" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            7 WL
+                        </h5>
+                        <p class="card-text">
+                            40TL
+                        </p>
+                        <a href="#" class="btn btn-primary">Satın Al</a>
+                    </div>
+                </div>
+
+                <div class="card w-25 m-3">
+                    <img src="images/dl.jpg" class="card-img-top h-100 w-100">
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            3 DL
+                        </h5>
+                        <p class="card-text">
+                            12TL
+                        </p>
+                        <a href="#" class="btn btn-primary">Satın Al</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+    </div>
+
+
+    <br><br><br><br><br><br><br><br>
+    <div class="container" id="footer">
+        <footer class="row row-cols-5 py-5 my-5 border-top nav.navbar-expand-md">
+            <div class="col">
+              <a href="/" class="d-flex align-items-center mb-3 link-dark text-decoration-none">
+                <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
+              </a>
+              <p class="text-muted">© 2021 Hakları Saklıdır</p>
+            </div>
+        
+            <div class="col">
+        
+            </div>
+        
+            <div class="col">
+              <h5>Beni Takip Edin</h5>
+              <ul class="nav flex-column">
+                <li class="nav-item mb-2"><a href="https://www.instagram.com/p.avsever/" target="_blank" class="nav-link p-0 text-muted"><i class="fa-brands fa-instagram"></i>      İnstagram
+                </a></li>
+                <li class="nav-item mb-2"><a href="https://twitter.com/PoyrazAvsever" target="_blank" class="nav-link p-0 text-muted"><i class="fa-brands fa-twitter"></i> Twitter
+                </a></li>
+                <li class="nav-item mb-2"><a href="https://www.youtube.com/channel/UCE5oct1IJPM4mReoYYuGFJw" target="_blank" class="nav-link p-0 text-muted"><i class="fa-brands fa-youtube"></i> Youtube</a></li>
+                <li class="nav-item mb-2"><a href="https://discord.gg/SqY5j5fgsX" target="_blank" class="nav-link p-0 text-muted"><i class="fa-brands fa-discord"></i> Discord</a></li>
+                <li class="nav-item mb-2"><a href="https://www.pavsever.com" class="nav-link p-0 text-muted" target="_top">-Web Siteye Geri Dön</a></li>
+              </ul>
+            </div>
+        
+            <div class="col">
+              <h5>Hızlı Link</h5>
+              <ul class="nav flex-column">
+                <li class="nav-item mb-2"><a href="product.html" class="nav-link p-0 text-muted"> Mağaza</a></li>
+                <li class="nav-item mb-2"><a href="index.html#sss" class="nav-link p-0 text-muted"> SSS</a></li>
+                <li class="nav-item mb-2"><a href="index.html" class="nav-link p-0 text-muted"> Anasayfa</a></li>
+                <li class="nav-item mb-2"><a href="login.html" class="nav-link p-0 text-muted"> Giriş Yap</a></li>
+                <li class="nav-item mb-2"><a href="register.html" class="nav-link p-0 text-muted"> Kayıt Ol</a></li>
+              </ul>
+            </div>
+        
+            <div class="col">
+              <h5>Site Hakkında</h5>
+              <ul class="nav flex-column">
+                <p>Siteyi bootstrap ile geliştirdim. Bu siteyi yapmaktaki amacım ise bootstrapdeki bilgilerimi tazelemek ve siteme ve github adresime proje katmaktı.</p>
+              </ul>
+            </div>
+          </footer>
+    </div>
+    
+
+
+
+
+
+
+    <script src="https://kit.fontawesome.com/5910418f23.js" crossorigin="anonymous"></script>
+    <script src="../js/main.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script> -->
+</body>
+</html>

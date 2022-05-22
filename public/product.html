@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"> -->
+</head>
+<body>
+
+    <div id="header" class="sticky-sm-top">
+
+        <div id="header-top" class="p-4 text-dark shadow-sm bg-white">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col">
+                        <h1 class="h4">Pavsever.<span class="text-primary">com</span></h1>             
+                    </div>
+
+                    <div class="col">
+                        <form class="d-flex" role="search">
+                            <input class="form-control me-2" type="search" placeholder="Ara..." aria-label="Search">
+
+                            <button class="btn btn-outline-dark fw-normal" type="button">Ara</button>
+                          </form>
+                    </div>
+
+                    <div class="col text-center">                   
+                        <a href= "register.html" id="user-icon" class="me-5 text-dark text-decoration-none" style="cursor:pointer;">
+                             <i class="fa-solid fa-user p-2 border rounded"></i>
+                            Üye Ol
+                         </a>
+                        <a href="shop.html" id="shop-icon" class="me-5 text-dark text-decoration-none" style="cursor:pointer;">
+                             <i class="fa-solid fa-cart-shopping p-2 border rounded"></i>
+                            Sepetim
+                        </a>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+
+        <nav class="navbar bg-dark navbar-dark navbar-expand-sm">
+            <div class="container">
+                <a href="#" class="navbar-brand text-primary">Poyraz Avsever</a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+                    <ul class="navbar-nav me-auto">
+                        <li class="nav-item">
+                            <a href="index.html#main-page" class="nav-link">Ana Sayfa</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="index.html#sss" class="nav-link">SSS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="index.html#fırsat" class="nav-link">Fırsatlar</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="product.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Ürünler
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-dark text-light" aria-labelledby="navbarDropdown">
+                                <p class="text-center"> Locks </p>
+                                <li><hr class="dropdown-divider text-center"></li>   
+                                <li><a class="dropdown-item" href="#product"><i class="fa-regular fa-gem"></i> Big Gem Lock</a></li>
+                                <li><a class="dropdown-item" href="#product"><i class="fa-solid fa-gem"></i> Diamond Lock</a></li>
+                                <li><a class="dropdown-item" href="#product"><i class="fa-solid fa-lock"></i> World Lock</a></li>
+                                <li><hr class="dropdown-divider text-center"></li>
+                                <p class="text-center"> İtemler </p>
+                                <li><hr class="dropdown-divider text-center"></li>
+                                <li><a class="dropdown-item" href="#product">➤ Hesaplar</a></li>
+                                <li><a class="dropdown-item" href="#product">➤ Kanatlar</a></li>
+                                
+
+                            </ul>
+                        </li>
+                    </ul>
+        
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a href="support.html" class="nav-link"><i class="fa-solid fa-phone"></i> Destek</a> <!-- Burada sayfa üzerinde pencere açılacak. -->
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <br><br><br>
+    
+    <div class="container-fluid">
+
+        <div class="row w-75 p-5">
+            <div class="col-4">
+                <div class="list-group" id="list-tab" role="tablist">
+                    <a class="list-group-item list-group-item-action active" id="bgl" data-bs-toggle="list" href="#list-bgl" role="tab" aria-controls="list-home"><i class="fa-regular fa-gem"></i> Big Gem Lock</a>
+
+                    <a class="list-group-item list-group-item-action" id="dl" data-bs-toggle="list" href="#list-dl" role="tab" aria-controls="list-profile"><i class="fa-solid fa-gem"></i> Diamond Lock</a>
+
+                    <a class="list-group-item list-group-item-action" id="wl" data-bs-toggle="list" href="#list-wl" role="tab" aria-controls="list-messages" ><i class="fa-solid fa-lock"></i> World Lock</a>
+
+                    <a class="list-group-item list-group-item-action" id="acounts" data-bs-toggle="list" href="#list-acounts" role="tab" aria-controls="list-settings">➤ Hesaplar</a>
+
+                    <a class="list-group-item list-group-item-action" id="items" data-bs-toggle="list" href="#list-items" role="tab" aria-controls="list-settings">➤ İtemler</a>
+
+
+                </div>
+            </div>
+            <div class="col-8">
+
+                <h2 class="h1 text-center" id="product">Ürünler</h2>
+
+
+                <div class="tab-content" id="nav-tabContent">
+
+                    <div class="tab-pane fade show active" id="list-bgl" role="tabpanel" aria-labelledby="bgl">
+
+                        <div class="row pt-5 w-100 justify-content-center">
+
+                            <div class="card w-25 m-3">
+                                <img src="images/bgl.jpg" class="card-img-top w-100 h-100">
+                                <div class="card-body">
+                                    <h5 class="card-title">
+                                        100 DL
+                                    </h5>
+                                    <p class="card-text">
+                                        1023 ₺
+                                    </p>
+                                    <a href="#" class="btn btn-primary">Satın Al</a>
+                                </div>
+                            </div>
+            
+                            <div class="card w-25 m-3">
+                                <img src="images/bgl.jpg" class="card-img-top w-100 h-100">
+                                <div class="card-body">
+                                    <h5 class="card-title">
+                                        100 DL
+                                    </h5>
+                                    <p class="card-text">
+                                        1023 ₺
+                                    </p>
+                                    <a href="#" class="btn btn-primary">Satın Al</a>
+                                </div>
+                            </div>
+            
+                             <div class="card w-25 m-3">
+                                <img src="images/bgl.jpg" class="card-img-top w-100 h-100">
+                                <div class="card-body">
+                                    <h5 class="card-title">
+                                        100 DL
+                                    </h5>
+                                    <p class="card-text">
+                                        1023 ₺
+                                    </p>
+                                    <a href="#" class="btn btn-primary">Satın Al</a>
+                                </div>
+                            </div>
+
+                            <div class="card w-25 m-3">
+                                <img src="images/bgl.jpg" class="card-img-top w-100 h-100">
+                                <div class="card-body">
+                                    <h5 class="card-title">
+                                        100 DL
+                                    </h5>
+                                    <p class="card-text">
+                                        1023 ₺
+                                    </p>
+                                    <a href="#" class="btn btn-primary">Satın Al</a>
+                                </div>
+                            </div>
+
+                            <div class="card w-25 m-3">
+                                <img src="images/bgl.jpg" class="card-img-top w-100 h-100">
+                                <div class="card-body">
+                                    <h5 class="card-title">
+                                        100 DL
+                                    </h5>
+                                    <p class="card-text">
+                                        1023 ₺
+                                    </p>
+                                    <a href="#" class="btn btn-primary">Satın Al</a>
+                                </div>
+                            </div>
+
+                            <div class="card w-25 m-3">
+                                <img src="images/bgl.jpg" class="card-img-top w-100 h-100">
+                                <div class="card-body">
+                                    <h5 class="card-title">
+                                        100 DL
+                                    </h5>
+                                    <p class="card-text">
+                                        1023 ₺
+                                    </p>
+                                    <a href="#" class="btn btn-primary">Satın Al</a>
+                                </div>
+                            </div>
+                        </div>
+                            
+                    </div>
+
+                    <div class="tab-pane fade" id="list-dl" role="tabpanel" aria-labelledby="dl">
+
+                        <div class="row pt-5 w-100 justify-content-center">
+
+                            <div class="card w-25 m-3">
+                                <img src="images/dl.jpg" class="card-img-top w-100 h-100">
+                                <div class="card-body">
+                                    <h5 class="card-title">
+                                        1 DL
+                                    </h5>
+                                    <p class="card-text">
+                                        12 ₺
+                                    </p>
+                                    <a href="#" class="btn btn-primary">Satın Al</a>
+                                </div>
+                            </div>
+            
+                            <div class="card w-25 m-3">
+                                <img src="images/5dl.jpg" class="card-img-top w-100 h-100">
+                                <div class="card-body">
+                                    <h5 class="card-title">
+                                        5 DL
+                                    </h5>
+                                    <p class="card-text">
+                                        58 ₺
+                                    </p>
+                                    <a href="#" class="btn btn-primary">Satın Al</a>
+                                </div>
+                            </div>
+            
+                             <div class="card w-25 m-3">
+                                <img src="images/10dl.jpg" class="card-img-top w-100 h-100">
+                                <div class="card-body">
+                                    <h5 class="card-title">
+                                        10 DL
+                                    </h5>
+                                    <p class="card-text">
+                                        116 ₺
+                                    </p>
+                                    <a href="#" class="btn btn-primary">Satın Al</a>
+                                </div>
+                            </div>
+
+                            <div class="card w-25 m-3">
+                                <img src="images/15dl.jpg" class="card-img-top w-100 h-100">
+                                <div class="card-body">
+                                    <h5 class="card-title">
+                                        15 DL
+                                    </h5>
+                                    <p class="card-text">
+                                        170 ₺
+                                    </p>
+                                    <a href="#" class="btn btn-primary">Satın Al</a>
+                                </div>
+                            </div>
+
+                            <div class="card w-25 m-3">
+                                <img src="images/20dl.jpg" class="card-img-top w-100 h-100">
+                                <div class="card-body">
+                                    <h5 class="card-title">
+                                        20 DL
+                                    </h5>
+                                    <p class="card-text">
+                                        230 ₺
+                                    </p>
+                                    <a href="#" class="btn btn-primary">Satın Al</a>
+                                </div>
+                            </div>
+
+                            <div class="card w-25 m-3">
+                                <img src="images/50dl.jpg" class="card-img-top w-100 h-100">
+                                <div class="card-body">
+                                    <h5 class="card-title">
+                                        50 DL
+                                    </h5>
+                                    <p class="card-text">
+                                        540 ₺
+                                    </p>
+                                    <a href="#" class="btn btn-primary">Satın Al</a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="tab-pane fade" id="list-wl" role="tabpanel" aria-labelledby="wl">
+
+                        <div class="row pt-5 w-100 justify-content-center">
+
+                            <div class="card w-25 m-3">
+                                <img src="images/25wl.jpg" class="card-img-top w-100 h-100">
+                                <div class="card-body">
+                                    <h5 class="card-title">
+                                        25 Wl
+                                    </h5>
+                                    <p class="card-text">
+                                        5 ₺
+                                    </p>
+                                    <a href="#" class="btn btn-primary">Satın Al</a>
+                                </div>
+                            </div>
+            
+                            <div class="card w-25 m-3">
+                                <img src="images/50wl.jpg" class="card-img-top w-100 h-100">
+                                <div class="card-body">
+                                    <h5 class="card-title">
+                                        50 WL
+                                    </h5>
+                                    <p class="card-text">
+                                        8 ₺
+                                    </p>
+                                    <a href="#" class="btn btn-primary">Satın Al</a>
+                                </div>
+                            </div>
+                        </div>
+                            
+                    </div>
+
+                    <div class="tab-pane fade" id="list-acounts" role="tabpanel" aria-labelledby="acounts">
+                        
+                        <div class="row pt-5 w-100 justify-content-center">
+
+                            <div class="card w-25 m-3">
+                                <img src="images/legend.jpg" class="card-img-top w-100 h-100">
+                                <div class="card-body">
+                                    <h5 class="card-title">
+                                        2-4 Legendli Hesap
+                                    </h5>
+                                    <p class="card-text">
+                                        9.225,00 ₺
+                                    </p>
+                                    <a href="#" class="btn btn-primary">Satın Al</a>
+                                </div>
+                            </div>
+            
+                            <div class="card w-25 m-3">
+                                <img src="images/dragon.jpg" class="card-img-top w-100 h-100">
+                                <div class="card-body">
+                                    <h5 class="card-title">
+                                        Legendary Dragonlu Hesap
+                                    </h5>
+                                    <p class="card-text">
+                                        4.100,00 ₺
+                                    </p>
+                                    <a href="#" class="btn btn-primary">Satın Al</a>
+                                </div>
+                            </div>
+            
+                             <div class="card w-25 m-3">
+                                <img src="images/goldenpickaxe.jpg" class="card-img-top w-100 h-100">
+                                <div class="card-body">
+                                    <h5 class="card-title">
+                                        Golden Pickaxe ve Focuslu Hesap
+                                    </h5>
+                                    <p class="card-text">
+                                        850,00 ₺
+                                    </p>
+                                    <a href="#" class="btn btn-primary">Satın Al</a>
+                                </div>
+                            </div>
+
+                            <div class="card w-25 m-3">
+                                <img src="images/digger.jpg" class="card-img-top w-100 h-100">
+                                <div class="card-body">
+                                    <h5 class="card-title">
+                                        Digger Spade ve Focuslu Hesap
+                                    </h5>
+                                    <p class="card-text">
+                                        780,00 ₺
+                                    </p>
+                                    <a href="#" class="btn btn-primary">Satın Al</a>
+                                </div>
+                            </div>
+
+                            <div class="card w-25 m-3">
+                                <img src="images/mercy.jpg" class="card-img-top w-100 h-100">
+                                <div class="card-body">
+                                    <h5 class="card-title">
+                                        Mercy Wings ve Focuslu Hesap
+                                    </h5>
+                                    <p class="card-text">
+                                        750,00 ₺
+                                    </p>
+                                    <a href="#" class="btn btn-primary">Satın Al</a>
+                                </div>
+                            </div>
+
+                            <div class="card w-25 m-3">
+                                <img src="images/125lvl.jpg" class="card-img-top w-100 h-100">
+                                <div class="card-body">
+                                    <h5 class="card-title">
+                                        125 Level Hesap
+                                    </h5>
+                                    <p class="card-text">
+                                        400,00 ₺
+                                    </p>
+                                    <a href="#" class="btn btn-primary">Satın Al</a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+
+                    <div class="tab-pane fade" id="list-items" role="tabpanel" aria-labelledby="items">
+                        
+                        <div class="row pt-5 w-100 justify-content-center">
+
+                            <div class="card w-25 m-3">
+                                <img src="images/tesseract.jpg" class="card-img-top w-100 h-100">
+                                <div class="card-body">
+                                    <h5 class="card-title">
+                                        Unstable Tesseract
+                                    </h5>
+                                    <p class="card-text">
+                                        58,50 ₺
+                                    </p>
+                                    <a href="#" class="btn btn-primary">Satın Al</a>
+                                </div>
+                            </div>
+            
+                            <div class="card w-25 m-3">
+                                <img src="images/megafon.jpg" class="card-img-top w-100 h-100">
+                                <div class="card-body">
+                                    <h5 class="card-title">
+                                        Megaphone
+                                    </h5>
+                                    <p class="card-text">
+                                        7,20 ₺
+                                    </p>
+                                    <a href="#" class="btn btn-primary">Satın Al</a>
+                                </div>
+                            </div>
+            
+                             <div class="card w-25 m-3">
+                                <img src="images/magplant.jpg" class="card-img-top w-100 h-100">
+
+                                <div class="card-body">
+                                    <h5 class="card-title">
+                                        MAGPLANT 5000
+                                    </h5>
+                                    <p class="card-text">
+                                        1.350,00 ₺
+                                    </p>
+                                    <a href="#" class="btn btn-primary">Satın Al</a>
+                                </div>
+                            </div>
+
+                            <div class="card w-25 m-3">
+                                <img src="images/growscan.jpg" class="card-img-top w-100 h-100">
+                                <div class="card-body">
+                                    <h5 class="card-title">
+                                        GrowScan 9000
+                                    </h5>
+                                    <p class="card-text">
+                                        450,00 ₺
+                                    </p>
+                                    <a href="#" class="btn btn-primary">Satın Al</a>
+                                </div>
+                            </div>
+
+                            <div class="card w-25 m-3">
+                                <img src="images/pegasus.jpg" class="card-img-top w-100 h-100">
+                                <div class="card-body">
+                                    <h5 class="card-title">
+                                        Pegasus Wings
+                                    </h5>
+                                    <p class="card-text">
+                                        13,50 ₺
+                                    </p>
+                                    <a href="#" class="btn btn-primary">Satın Al</a>
+                                </div>
+                            </div>
+
+                            <div class="card w-25 m-3">
+                                <img src="images/gold.jpg" class="card-img-top w-100 h-100">
+                                <div class="card-body">
+                                    <h5 class="card-title">
+                                        Item of The Month
+                                    </h5>
+                                    <p class="card-text">
+                                        63,00 ₺
+                                    </p>
+                                    <a href="#" class="btn btn-primary">Satın Al</a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>   
+    </div>
+
+    <br><br>
+    <div class="container" id="footer">
+        <footer class="row row-cols-5 py-5 my-5 border-top nav.navbar-expand-md">
+            <div class="col">
+              <a href="/" class="d-flex align-items-center mb-3 link-dark text-decoration-none">
+                <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
+              </a>
+              <p class="text-muted">© 2021 Hakları Saklıdır</p>
+            </div>
+        
+            <div class="col">
+        
+            </div>
+        
+            <div class="col">
+              <h5>Beni Takip Edin</h5>
+              <ul class="nav flex-column">
+                <li class="nav-item mb-2"><a href="https://www.instagram.com/p.avsever/" target="_blank" class="nav-link p-0 text-muted"><i class="fa-brands fa-instagram"></i>      İnstagram
+                </a></li>
+                <li class="nav-item mb-2"><a href="https://twitter.com/PoyrazAvsever" target="_blank" class="nav-link p-0 text-muted"><i class="fa-brands fa-twitter"></i> Twitter
+                </a></li>
+                <li class="nav-item mb-2"><a href="https://www.youtube.com/channel/UCE5oct1IJPM4mReoYYuGFJw" target="_blank" class="nav-link p-0 text-muted"><i class="fa-brands fa-youtube"></i> Youtube</a></li>
+                <li class="nav-item mb-2"><a href="https://discord.gg/SqY5j5fgsX" target="_blank" class="nav-link p-0 text-muted"><i class="fa-brands fa-discord"></i> Discord</a></li>
+                <li class="nav-item mb-2"><a href="https://www.pavsever.com" class="nav-link p-0 text-muted" target="_top">-Web Siteye Geri Dön</a></li>
+              </ul>
+            </div>
+        
+            <div class="col">
+              <h5>Hızlı Link</h5>
+              <ul class="nav flex-column">
+                <li class="nav-item mb-2"><a href="product.html" class="nav-link p-0 text-muted"> Mağaza</a></li>
+                <li class="nav-item mb-2"><a href="index.html#sss" class="nav-link p-0 text-muted"> SSS</a></li>
+                <li class="nav-item mb-2"><a href="index.html" class="nav-link p-0 text-muted"> Anasayfa</a></li>
+                <li class="nav-item mb-2"><a href="login.html" class="nav-link p-0 text-muted"> Giriş Yap</a></li>
+                <li class="nav-item mb-2"><a href="register.html" class="nav-link p-0 text-muted"> Kayıt Ol</a></li>
+              </ul>
+            </div>
+        
+            <div class="col">
+              <h5>Site Hakkında</h5>
+              <ul class="nav flex-column">
+                <p>Siteyi bootstrap ile geliştirdim. Bu siteyi yapmaktaki amacım ise bootstrapdeki bilgilerimi tazelemek ve siteme ve github adresime proje katmaktı.</p>
+              </ul>
+            </div>
+          </footer>
+    </div>
+    
+    
+
+
+
+
+
+
+    <script src="https://kit.fontawesome.com/5910418f23.js" crossorigin="anonymous"></script>
+    <script src="../js/main.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script> -->
+</body>
+</html>
